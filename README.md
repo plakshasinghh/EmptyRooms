@@ -8,11 +8,11 @@
 
 ## Key Features
 
-- 🏫 **Live Classroom Availability** – Easily find which rooms are free at a given time.
-- 🗓️ **Automated Timetable Parsing** – A Python script parses Excel schedules and updates the MongoDB database autonomously.
-- 📊 **Supports 500+ Users** – Used by both students and faculty for booking lecture halls and labs.
-- 🔗 **REST API Tested via Postman** – Ensured stability before deployment.
-- 🖥️ **Intuitive UI** – Built using EJS templates, HTML/CSS, and JavaScript.
+-  **Live Classroom Availability** – Easily find which rooms are free at a given time.
+-  **Automated Timetable Parsing** – A Python script parses Excel schedules and updates the MongoDB database autonomously.
+-  **Supports 500+ Users** – Used by both students and faculty for booking lecture halls and labs.
+-  **REST API Tested via Postman** – Ensured stability before deployment.
+-  **Intuitive UI** – Built using EJS templates, HTML/CSS, and JavaScript.
 
 ##  How It Works
 
