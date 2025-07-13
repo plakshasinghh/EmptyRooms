@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HDVT9JRELK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HDVT9JRELK');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EmptyRoom</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(300deg, #f0e3fa, #dedcff, #dbf4fd);
+      background-size: 180% 180%;
+      animation: gradient-animation 18s ease infinite;
+      font-family: 'Helvetica Neue', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    @keyframes gradient-animation {
+      0% {
+        background-position: 0% 0%;
+      }
+      100% {
+        background-position: 100% 100%;
+      }
+    }
+
+    .main-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+      max-width: 1200px;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 50px;
+    }
+
+    .waviy {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 30px;
+    }
+
+    .waviy h1 {
+      font-size: 3rem;
+      color: #333;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 20px;
+      animation: slideIn 2s ease-in-out;
+    }
+
+    .waviy span {
+      position: relative;
+      display: inline-block;
+      font-size: 3.5rem;
+      color: #ff007f;
+      text-transform: uppercase;
+      animation: flip 3s infinite;
+      animation-delay: calc(.2s * var(--i));
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes flip {
+      0%, 80% {
+        transform: rotateY(360deg);
+      }
+    }
+
+    .typewriter {
+      overflow: hidden;
+      font-family: 'Courier New', Courier, monospace;
+      border-right: .15em solid #333;
+      white-space: nowrap;
+      animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #333 }
+    }
+
+    .main-form {
+      font-size: 1.2rem;
+    }
+
+    .main-form label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    .main-form select {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      margin-bottom: 1rem;
+    }
+
+    .main-form button {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .disclaimer {
+      background-color: #f8d7da;
+      color: #721c24;
+      border-color: #f5c6cb;
+      padding: 15px;
+      border-radius: 5px;
+      margin-top: 20px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .disclaimer2{
+      color: #fc1818;
+      border-color: #f5c6cb;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .waviy h1 {
+        font-size: 2.5rem;
+      }
+
+      .waviy span {
+        font-size: 3rem;
+      }
+
+      .main-form {
+        font-size: 1rem;
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      .waviy h1 {
+        font-size: 2rem;
+      }
+
+      .waviy span {
+        font-size: 2.5rem;
+      }
+
+      .main-form {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+<meta name="google-site-verification" content="KrPWe09qTtFp_i3D9UviMD5Bp8KXJg7WSybtSmAvrC4" />
+</head>
+
+<body>
+  <div class="container main-box">
+    <div class="row align-items-center g-lg-5">
+      <div class="col-lg-7 text-center text-lg-start waviy">
+        <h1 class="display-4 fw-bold lh-1">Find <span>EmptyRoom</span> near you !!</h1>
+        <ul class="fs-4 list-unstyled">
+          <li class="typewriter">Bored by Silence of Library?</li>
+          <li class="typewriter">Want to chill with friends?</li>
+          <li class="typewriter">Finding room for Extra Class?</li>
+        </ul>
+        <p>Don't worry, we’ve got you covered...</p>
+      </div>
+      <div class="col-md-10 mx-auto col-lg-5">
+        <form class="p-4 p-md-5 border rounded-3 bg-light main-form" action="/" method="post">
+          <div class="mb-3">
+            <label for="days">Choose a Day:</label>
+            <select name="day" id="days">
+              <option value="Monday">Monday</option>
+              <option value="Tuesday">Tuesday</option>
+              <option value="Wednesday">Wednesday</option>
+              <option value="Thursday">Thursday</option>
+              <option value="Friday">Friday</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="blocks">Choose a Block:</label>
+            <select name="block" id="blocks">
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+              <option value="F">F</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="times">Time:</label>
+            <select name="time" id="times">
+              <option value="9">9 AM</option>
+              <option value="10">10 AM</option>
+              <option value="11">11 AM</option>
+              <option value="12">12 PM</option>
+              <option value="1">1 PM</option>
+              <option value="2">2 PM</option>
+              <option value="3">3 PM</option>
+              <option value="4">4 PM</option>
+              <option value="5">5 PM</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="type">Lab/Room:</label>
+            <select name="type" id="type">
+              <option value="lab">Lab</option>
+              <option value="hall">Classroom</option>
+            </select>
+          </div>
+          <button class="btn btn-primary" type="submit">Find a Room</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const blockSelect = document.getElementById('blocks');
+      const typeSelect = document.getElementById('type');
+      
+      blockSelect.addEventListener('change', function() {
+        const selectedBlock = this.value;
+        
+        if (selectedBlock === 'E' || selectedBlock === 'F' || selectedBlock === 'C' || selectedBlock === 'D' ) {
+          // Set options for blocks E and F, C and D
+          typeSelect.innerHTML = `
+            <option value="lab">Lab</option>
+            <option value="hall">Classroom</option>
+          `;
+        } else {
+          // Set options for other blocks
+          typeSelect.innerHTML = `
+            <option value="hall">Classroom</option>
+          `;
+        }
+      });
+
+      // Trigger change event on page load to ensure correct initial options
+      blockSelect.dispatchEvent(new Event('change'));
+    });
+  </script>
+</body>
+
+</html>
